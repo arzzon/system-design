@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Design Mastery — Interview Prep for Senior Engineers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="logo" data-route="home">
+                <span class="logo-icon">⚙️</span>
+                <span class="logo-text">SystemDesign<span class="logo-accent">Mastery</span></span>
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="#" class="nav-link" data-route="concepts">
+                    <span class="nav-emoji">📚</span> Concepts
+                </a>
+                <a href="#" class="nav-link" data-route="progressive">
+                    <span class="nav-emoji">🏗️</span> Learn by Building
+                </a>
+                <a href="#" class="nav-link" data-route="problems">
+                    <span class="nav-emoji">💡</span> Interview Problems
+                </a>
+            </div>
+            <div class="nav-right">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon sun">☀️</span>
+                    <span class="theme-icon moon">🌙</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main" id="app">
+        <!-- Content rendered dynamically by app.js -->
+    </main>
+
+    <!-- Tooltip / Keyword Modal -->
+    <div class="tooltip-overlay" id="tooltip-overlay">
+        <div class="tooltip-modal" role="dialog" aria-modal="true">
+            <div class="tooltip-header">
+                <h3 id="tooltip-title"></h3>
+                <button class="tooltip-close" id="tooltip-close" aria-label="Close tooltip">&times;</button>
+            </div>
+            <div class="tooltip-body" id="tooltip-body"></div>
+        </div>
+    </div>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+    <footer class="footer">
+        <div class="container">
+            <p>System Design Mastery — Crafted for Senior & Staff Engineers</p>
+            <p style="margin-top: 4px; font-size: 12px;">by <strong>arzzon</strong></p>
+        </div>
+    </footer>
+
+    <script src="js/tooltips.js"></script>
+    <script src="js/concepts.js"></script>
+    <script src="js/progressive.js"></script>
+    <script src="js/problems.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
